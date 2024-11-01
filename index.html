@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Guilherme Henrique</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">                                                                       
+</head>
+<body class="dark-mode">
+    <!-- Cabeçalho e navegação -->
+    <header>
+        <div class="container">
+            <h1>Guilherme Henrique</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Página Inicial</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="habilidades.html">Habilidades</a></li>
+                    <li><button id="theme-toggle">🌙</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção principal -->
+    <main class="welcome-section">
+        <div class="content fade-in"> <!-- Adicione a classe fade-in aqui -->
+            <h2>BEM-VINDO</h2>
+            <p>Ao meu portfólio, aqui você poderá conhecer mais sobre meus projetos e habilidades.</p>
+            <a href="projetos.html" class="button">Projetos</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Guilherme Henrique - Todos os direitos reservados.</p>
+            <p>WhatsApp: +55 31 98332-1509</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Adiciona a classe "visible" para ativar o efeito de fade-in
+        window.addEventListener('load', function() {
+            const content = document.querySelector('.fade-in');
+            content.classList.add('visible');
+        });
+    </script>
+</body>
+</html>

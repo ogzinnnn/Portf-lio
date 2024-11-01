@@ -1,0 +1,153 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos principais do corpo */
+body {
+    font-family: "Days One", sans-serif;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #000000;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Cabeçalho */
+header {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 1rem 0;
+}
+
+header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a, #theme-toggle {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #bbb;
+}
+
+.color-toggle {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Seção de boas-vindas */
+.welcome-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+.welcome-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/Fundo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(30%);
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.welcome-section h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.welcome-section p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.button {
+    padding: 1rem 2rem;
+    background-color: #2b2b2b;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #111111;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .welcome-section h2 {
+        font-size: 2.5rem;
+    }
+
+    .welcome-section p {
+        font-size: 1.2rem;
+    }
+
+    .button {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+}
